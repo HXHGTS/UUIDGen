@@ -12,11 +12,6 @@ int main() {
 	for (i = 1; i < x; i++) {
 		system("powershell [guid]::NewGuid() | find /v \"Guid\" | find /v \"--\" | find \"-\" >> uuid.txt");
 	}
-	printf("-------------------------------------------------------\n");
-	printf("------------------------UUID---------------------------\n");
-	printf("-------------------------------------------------------\n");
-	system("type uuid.txt");
-	printf("-------------------------------------------------------\n");
-	system("pause");
+	system("notepad uuid.txt");
 	return 0;
 }
